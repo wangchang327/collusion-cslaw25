@@ -15,10 +15,10 @@ To modify the configuration, edit `config.py` as needed.
 
 ```latex
 @article{hartline2025regulation,
-	title={Regulation of Algorithmic Collusion, Refined: Testing Pessimistic Calibrated Regret},
-	author={Hartline, Jason D and Wang, Chang and Zhang, Chenhao},
-	journal={arXiv preprint arXiv:2501.09740},
-	year={2025}
+    title={Regulation of Algorithmic Collusion, Refined: Testing Pessimistic Calibrated Regret},
+    author={Hartline, Jason D and Wang, Chang and Zhang, Chenhao},
+    journal={arXiv preprint arXiv:2501.09740},
+    year={2025}
 }
 ```
 
