@@ -32,5 +32,6 @@ for s in [1]:
     plt.tight_layout()
     plt.ylabel("regret")
     plt.xlabel("T (time horizon)")
+    plt.yscale("log")
     plt.savefig(f"figure_t.pdf")
     plt.close()

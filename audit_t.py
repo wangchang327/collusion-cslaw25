@@ -9,8 +9,9 @@ priceset = np.linspace(1 / (num_prices + 1), 1, num_prices, endpoint=False)
 
 
 def estimate_regret(transcript_, assumed_cost, length, true_allocation=False):
+    assert len(transcript_) == length
     transcript = transcript_[: int(length)]
-    estimated_allocation = np.zeros((T, num_prices))
+    estimated_allocation = np.zeros((length, num_prices))
     for i, t in enumerate(transcript):
         p, pi, x, _, opponent = t
         empirical_dist = pi
@@ -40,7 +41,7 @@ def estimate_regret(transcript_, assumed_cost, length, true_allocation=False):
 
 def job(agent_type, s, i, c, ttt):
     # print(f"started agent_type={agent_type}, s={s}, i={i}, c={c}, t={ttt}")
-    with open(f"transcripts/{agent_type}-{i}-seller{s}.pkl", "rb") as f:
+    with open(f"transcripts/{agent_type}-{i}-{ttt}-seller{s}.pkl", "rb") as f:
         transcript = pickle.load(f)
     res = [
         ttt,
@@ -80,12 +81,7 @@ for agent_type in ["q"]:
     for s in [1]:
         for c in [0.1, 0.25]:
             for i in repeat:
-                for t in (
-                    [x * 100 for x in [2, 4, 6, 8, 10]]
-                    + [x * 1000 for x in [2, 4, 6, 8, 10]]
-                    + [x * 10000 for x in [2, 4, 6, 8, 10]]
-                    + [x * 100000 for x in range(2, 11)]
-                ):
+                for t in T_range:
                     params.append((agent_type, s, i, c, t))
 
 

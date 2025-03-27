@@ -1,5 +1,10 @@
-N = 10  # number of repeats
-T = 100000  # number of rounds
+N = 100  # number of repeats
+T_range = (
+    [x * 100 for x in [2, 4, 6, 8, 10]]
+    + [x * 1000 for x in [2, 4, 6, 8, 10]]
+    + [x * 10000 for x in [2, 4, 6, 8, 10]]
+    + [x * 100000 for x in range(2, 11)]
+)
 
 
 # compute the probability of winning
