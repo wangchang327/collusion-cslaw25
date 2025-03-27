@@ -14,11 +14,20 @@ To modify the configuration, edit `config.py` as needed.
 ## Citation
 
 ```latex
-@article{hartline2025regulation,
-    title={Regulation of Algorithmic Collusion, Refined: Testing Pessimistic Calibrated Regret},
-    author={Hartline, Jason D and Wang, Chang and Zhang, Chenhao},
-    journal={arXiv preprint arXiv:2501.09740},
-    year={2025}
+@inproceedings{10.1145/3709025.3712217,
+    author = {Hartline, Jason D. and Wang, Chang and Zhang, Chenhao},
+    title = {Regulation of Algorithmic Collusion, Refined: Testing Pessimistic Calibrated Regret},
+    year = {2025},
+    isbn = {9798400714214},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3709025.3712217},
+    doi = {10.1145/3709025.3712217},
+    booktitle = {Proceedings of the 2025 Symposium on Computer Science and Law},
+    pages = {108–120},
+    numpages = {13},
+    keywords = {Algorithmic collusion, Algorithmic pricing, Antitrust, Regulation of algorithms},
+    location = {Munich, Germany},
+    series = {CSLAW '25}
 }
 ```
-
